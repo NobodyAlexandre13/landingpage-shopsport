@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fcfcfc;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 99;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 600;
+    color: #313131;
+}
+.logo i{
+    font-size: 30px;
+}
+.menu{
+    padding: 10px;
+}
+.menu nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.menu nav ul li{
+    list-style: none;
+}
+.menu nav ul li a{
+    color: #313131;
+    text-decoration: none;
+}
+.abrir-mobile{
+    display: none;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    gap: 25px;
+}
+.texto-home{
+    animation: fadeInRigth 1.5s ease-in-out alternate;
+}
+.texto-home h1{
+    font-size: 58px;
+    color: #313575;
+}
+.texto-home p{
+    font-size: 25px;
+    font-weight: 500;
+}
+.texto-home a{
+    background-color: #313575;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.img-home{
+    animation: fadeInLeft 1.5s ease-in-out alternate;
+    width: 35%;
+}
+.img-home img{
+    width: 100%;
+}
+
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.img-sobre{
+    margin-top: 6%;
+    border-radius: 10px;
+    background-color: #dddddd;
+    width: 30%;
+    padding: 10px 15px;
+}
+.img-sobre img{
+    width: 100%;
+}
+.text-sobre{
+    width: 40%;
+}
+.text-sobre h1{
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+.sobre a{
+    background-color: #313575;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+.area-servico{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.servico{
+    width: 250px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.area-servico .servico .icon{
+    font-size: 58px;
+    color: #313575;
+}
+.area-servico .servico .descricao{
+    padding: 10px;
+    text-align: center;
+}
+.area-servico .servico .descricao h1{
+    font-size: 20px;
+}
+
+.camisas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+.area-camisas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.camisa{
+    width: 300px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #e6e6e6;
+}
+.img-camisa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-camisa img{
+    width: 70%;
+    margin-left: 10px;
+    transition: all .5s;
+    margin-top: 10px;
+}
+.img-camisa img:hover{
+    margin-left: -80px;
+}
+.img-camisa .fundo{
+    background-color: #313575;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px 15px;
+    color: #fcfcfc;
+    font-weight: 600;
+    width: 150px;
+    transition: all .5s;
+}
+.text-camisa{
+    padding: 10px;
+}
+.text-camisa .nome{
+    font-size: 18px;
+    font-weight: 600;
+}
+.camisa .btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.camisa .btn .btn-camisa{
+    padding: 5px 15px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    background-color: #313575;
+    color: #fff;
+    align-self: flex-end;
+    font-size: 20px;
+    cursor: pointer;
+}
+.camisa .btn .btn-camisa:hover{
+    background-color: #3138a1;
+    transition: all .4s;
+    color: #ffffff;
+}
+.contacto{
+    margin-top: 6%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.icon-contacto{
+    font-size: 100px;
+}
+.text-contacto div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.text-contacto i{
+    font-size: 40px;
+}
+footer{
+    background-color: #313575;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+@keyframes fadeInRigthMenu {
+    0%{
+        transform: translateX(100%) scale(1);
+    }
+    100%{
+        transform: translateX(0%) scale(1);
+    }
+}
+@keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%) scale(1);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%) scale(1);
+    }
+}
+@keyframes fadeInRigth {
+    0%{
+        opacity: 0;
+        transform: translateX(100%) scale(1);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%) scale(1);
+    }
+}
+@media screen and (max-width: 1024px){
+    .area-camisas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 840px){
+        .servico{
+            width: 200px;
+        }
+        .text-sobre h1{
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 720px){
+        .texto-home h1{
+            font-size: 48px;
+        }
+        .texto-home p{
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 670px){
+        .abrir-mobile{
+            display: block;
+            font-size: 35px;
+            color: #313575;
+            cursor: pointer;
+        }
+        .menu{
+            background-color: #313575;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            top: 10%;
+            left: 10%;
+            padding: 40px 20px;
+            display: none;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            transition: all .5s;
+            animation: fadeInRigthMenu 1.5s ease-in-out alternate;
+        }
+        .menu.abrirH{
+            display: block;
+        }
+        .menu nav ul{
+            flex-direction: column;
+        }
+        .menu nav ul li{
+            list-style: none;
+            width: 100%;
+        }
+        .menu nav ul li a{
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+            width: 100%;
+            padding: 10px 15px;
+        }
+        .area-servico{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .servico{
+            width: 250px;
+        }
+        .area-camisas{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width: 600px){
+        .sobre{
+            flex-direction: column;
+        }
+        .img-sobre{
+            width: 50%;
+        }
+        .text-sobre{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 580px){
+        .home{
+            flex-direction: column-reverse;
+            margin-top: 15%;
+        }
+        .img-home{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 400px){
+        .camisas, .sobre, .servicos, .contacto{
+            margin-top: 20%;
+        }
+        .texto-home h1{
+            font-size: 40px;
+        }
+        .texto-home p{
+            font-size: 18px;
+        }
+        .texto-home a{
+            font-size: 15px;
+            font-weight: 600;
+            padding: 10px 10px;
+        }
+        .img-home{
+            width: 100%;
+        }
+        .img-contacto i{
+            display: none;
+        }
+        .img-sobre{
+            width: 80%;
+        }
+        .img-sobre img{
+            width: 100%;
+        }
+        .text-sobre{
+            width: 100%;
+            padding: 15px;
+        }
+    }
+}
